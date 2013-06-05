@@ -30,7 +30,7 @@
   <project path="prebuilt/linux-x86/toolchain/arm-eabi-4.4.3" name="rukin5197/arm-eabi-4.4.3" remote="gh" revision="jellybean" />
 
   <!-- bradthomas127 -->
-  <project path="local_manifest" name="bradthomas127/android_local_manifest" revision="cm10.1" />
+  <project path="local_manifest" name="bradthomas127/android_local_manifest" revision="carbon" />
   <project path="device/htc/primoc" name="bradthomas127/android_device_htc_primoc" remote="gh" revision="cm-10.1" />
 
 
