@@ -13,7 +13,7 @@
   
   <!-- Trying something -->
   <remove-project name="CarbonDev/android_frameworks_base" />
-  <project path="frameworks/base" name="Android-Butter/android_frameworks_base" remote="gh" revision="jb2" />
+  <project path="frameworks/base" name="Android-Butter/android_frameworks_base" remote="cr" revision="jb2" />
 
   <!-- CM hack -->
   <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="gh" revision="jellybean" />
