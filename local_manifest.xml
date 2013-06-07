@@ -10,10 +10,6 @@
   <remove-project name="CyanogenMod/android_hardware_qcom_gps" />
   <remove-project name="arco/android_hardware_qcom_display-legacy" />
   <remove-project name="arco/android_hardware_qcom_media-legacy" />
-  
-  <!-- Trying something -->
-  <remove-project name="CarbonDev/android_frameworks_base" />
-  <project path="frameworks/base" name="Android-Butter/android_frameworks_base" remote="cr" revision="jb2" />
 
   <!-- CM hack -->
   <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="gh" revision="jellybean" />
@@ -21,7 +17,7 @@
   <!-- Mustaavalkosta -->
   <project path="frameworks/av" name="Mustaavalkosta/android_frameworks_av" remote="gh" revision="cm-10.1" />
   <project path="frameworks/native" name="Mustaavalkosta/android_frameworks_native" remote="gh" revision="cm-10.1" />
-  <project path="hardware/qcom/display" name="Mustaavalkosta/android_hardware_qcom_display" revision="jb4.2" />
+  <project path="hardware/qcom/display" name="Mustaavalkosta/android_hardware_qcom_display" remote="gh" revision="jb4.2" />
   <project path="hardware/qcom/audio" name="Mustaavalkosta/android_hardware_qcom_audio" remote="gh" revision="cm-10.1" />
   <project path="hardware/qcom/media" name="Mustaavalkosta/android_hardware_qcom_media" remote="gh" revision="cm-10.1" />
   <project path="prebuilts/misc" name="Mustaavalkosta/android_prebuilts_misc" remote="gh" revision="jb-mv" />
@@ -34,8 +30,8 @@
   <project path="prebuilt/linux-x86/toolchain/arm-eabi-4.4.3" name="rukin5197/arm-eabi-4.4.3" remote="gh" revision="jellybean" />
 
   <!-- bradthomas127 -->
-  <project path="local_manifest" name="bradthomas127/android_local_manifest" revision="carbon" />
-  <project path="device/htc/primoc" name="bradthomas127/android_device_htc_primoc" remote="gh" revision="cm-10.1" />
+  <project path="local_manifest" name="bradthomas127/android_local_manifest" remote="gh" revision="carbon" />
+  <project path="device/htc/primoc" name="bradthomas127/android_device_htc_primoc" remote="gh" revision="cm10.1" />
 
 
 </manifest>
