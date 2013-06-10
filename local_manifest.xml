@@ -6,17 +6,33 @@
            sync-c="true"
            sync-j="4" />
 
-  <!-- remove CM repos -->
+  <!-- remove ls repos -->
   <remove-project name="android_frameworks_av" />
   <remove-project name="android_frameworks_native" />
   <remove-project name="android_hardware_qcom_audio" />
   <remove-project name="android_hardware_qcom_display" />
   <remove-project name="android_hardware_qcom_media" />
   <remove-project name="android_packages_input_LatinIME" />
+  <remove-project name="android_packages_providers_TelephonyProvider" />
+  
+  <!-- remove extras -->
+  <remove-project name="proprietary_vendor_nvidia" />
+  <remove-project name="proprietary_vendor_samsung" />
+  <remove-project name="proprietary_vendor_widevine" />
+  <remove-project name="android_device_samsung_d2-common" />
+  <remove-project name="android_device_samsung_d2att" />
+  <remove-project name="android_device_samsung_d2mtr" />
+  <remove-project name="android_device_samsung_d2spr" />
+  <remove-project name="android_device_samsung_d2tmo" />
+  <remove-project name="android_device_samsung_d2usc" />
+  <remove-project name="android_device_samsung_d2vzw" />
+  <remove-project name="android_device_samsung_i9300" />
+  <remove-project name="android_device_samsung_maguro" />
   
   <!-- CM -->
   <project path="packages/inputmethods/LatinIME" name="CyanogenMod/android_packages_inputmethods_LatinIME" remote="gh" revision="jellybean" />
-
+  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="cm" revision="jellybean" />
+  
   <!-- Mustaavalkosta -->
   <project path="frameworks/av" name="Mustaavalkosta/android_frameworks_av" remote="gh" revision="jellybean-stable" />
   <project path="frameworks/native" name="Mustaavalkosta/android_frameworks_native" remote="gh" revision="jellybean-stable" />
