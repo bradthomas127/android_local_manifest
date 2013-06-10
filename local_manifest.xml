@@ -11,8 +11,7 @@
   <remove-project name="android_frameworks_native" />
   <remove-project name="android_hardware_qcom_audio" />
   <remove-project name="android_hardware_qcom_display" />
-  <remove-project name="CarbonDev/android_hardware_qcom_media" />
-  <remove-project name="android_hardware_qcom_gps" />
+  <remove-project name="android_hardware_qcom_media" />
 
   <!-- Mustaavalkosta -->
   <project path="frameworks/av" name="Mustaavalkosta/android_frameworks_av" remote="gh" revision="jellybean-stable" />
