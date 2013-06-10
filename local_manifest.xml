@@ -28,11 +28,22 @@
   <remove-project name="android_device_samsung_d2vzw" />
   <remove-project name="android_device_samsung_i9300" />
   <remove-project name="android_device_samsung_maguro" />
+  <remove-project name="android_packages_apps_Launcher2" />
+  <remove-project name="android_build" />
+  <remove-project name="android_packages_apps_Mms" />
+  <remove-project name="android_packages_apps_Phone" />
+
+  <project path="build" name="AndroidTransformers/android_build" remote="gh" revision="jb">
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
   
   <!-- CM -->
   <project path="packages/inputmethods/LatinIME" name="CyanogenMod/android_packages_inputmethods_LatinIME" remote="gh" revision="jellybean" />
-  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="cm" revision="jellybean" />
-  
+  <project path="packages/providers/TelephonyProvider" name="CyanogenMod/android_packages_providers_TelephonyProvider" remote="gh" revision="jellybean" />
+  <project path="packages/providers/TelephonyProvider" name="CyanogenMod/android_packages_apps_Launcher2" remote="gh" revision="jellybean" />
+  <project path="packages/providers/TelephonyProvider" name="CyanogenMod/android_packages_apps_Mms" remote="gh" revision="jellybean" />
+  <project path="packages/providers/TelephonyProvider" name="CyanogenMod/android_packages_apps_Phone" remote="gh" revision="jellybean" />
+
   <!-- Mustaavalkosta -->
   <project path="frameworks/av" name="Mustaavalkosta/android_frameworks_av" remote="gh" revision="jellybean-stable" />
   <project path="frameworks/native" name="Mustaavalkosta/android_frameworks_native" remote="gh" revision="jellybean-stable" />
