@@ -1,34 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <!-- Remotes -->
+
   <!-- remove CM repos -->
   <remove-project name="CyanogenMod/android_frameworks_av" />
   <remove-project name="CyanogenMod/android_frameworks_native" />
-  <remove-project name="CyanogenMod/android_hardware_qcom_audio" />
   <remove-project name="CyanogenMod/android_hardware_qcom_display" />
   <remove-project name="CyanogenMod/android_hardware_qcom_media" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_media-caf" />
   <remove-project name="CyanogenMod/android_hardware_qcom_gps" />
   <remove-project name="CyanogenMod/android_packages_apps_CMUpdater" />
   <remove-project name="platform/prebuilts/misc" />
-
   <!-- CM hack -->
-  <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" revision="jellybean" />
+  <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="github" revision="jellybean" />
 
-  <!-- Mustaavalkosta -->
-  <project path="frameworks/av" name="Mustaavalkosta/android_frameworks_av" revision="cm-10.1" />
-  <project path="frameworks/native" name="Mustaavalkosta/android_frameworks_native" revision="cm-10.1" />
-  <project path="hardware/qcom/audio" name="Mustaavalkosta/android_hardware_qcom_audio" revision="cm-10.1" />
-  <project path="hardware/qcom/media" name="Mustaavalkosta/android_hardware_qcom_media" revision="cm-10.1" />
-  <project path="prebuilts/misc" name="Mustaavalkosta/android_prebuilts_misc" revision="jb-mv" />
-  <project path="vendor/qcom/proprietary" name="Mustaavalkosta/android_vendor_qcom_proprietary" revision="cm-10.1" />
-
-  <!-- Rukin5197 -->
-  <project path="local_manifest" name="rukin5197/android_local_manifest" revision="cm10.1" />
-  <project path="device/htc/primoc" name="rukin5197/android_device_htc_primoc" remote="github" revision="cm-10.1" />
-  <project path="device/htc/msm7x30-common" name="rukin5197/android_device_htc_msm7x30-common" revision="cm-10.1" />
-  <project path="hardware/qcom/display" name="rukin5197/android_hardware_qcom_display" revision="cm-10.1" />
-  <project path="kernel/htc/primoc" name="rukin5197/android_kernel_htc_primoc" remote="github" revision="jellybean" />
+  <!-- bradthomas127 -->
+  <project path="local_manifest" name="bradthomas127/android_local_manifest" remote="github" revision="cm-10.2" />
+  
+  <!-- These will change frequently... -->
+  <project path="kernel/htc/primoc" name="bradthomas127/android_kernel_htc_primoc" remote="github" revision="jellybean" />
+  <project path="frameworks/av" name="codefireXperiment/frameworks_av" remote="github" revision="jb-devel-mr2-release" />
+  <project path="hardware/qcom/display" name="codefireXperiment/hardware_qcom_display" remote="github" revision="jb-devel-mr2-release" />
+  <project path="frameworks/native" name="codefireXperiment/frameworks_native" remote="github" revision="jb-devel-mr2-release" />
+  <project path="hardware/qcom/media" name="codefireXperiment/hardware_qcom_media" remote="github" revision="jb-devel-mr2-release" />
+  <project path="hardware/qcom/media-caf" name="codefireXperiment/hardware_qcom_media-caf" remote="github" revision="jb-devel-mr2-release" />
+  <project path="prebuilts/misc" name="codefireXperiment/prebuilts_misc" remote="github" revision="jb-devel-mr2-release" />
+  <project path="vendor/qcom/proprietary" name="codefireXperiment/vendor_qcom_proprietary" remote="github" revision="jb-devel-mr2-release" />
+  <!--<project path="kernel/htc/SickleKernel" name="SickleKernels/android_kernel_htc_msm7x30" remote="github" revision="jellybean-4.2" />-->
+  <project path="device/htc/msm7x30-common" name="codefireXperiment/device_htc_msm7x30-common" remote="github" revision="jb-devel-mr2-release" />
+  <project path="device/htc/primoc" name="bradthomas127/android_device_htc_primoc" remote="github" revision="cm-10.2" />
+  <!--<project path="kernel/htc/primoc" name="Primo-Dev/android_kernel_htc_primoc" remote="github" revision="jellybean" />-->
   <project path="prebuilt/linux-x86/toolchain/arm-eabi-4.4.3" name="rukin5197/arm-eabi-4.4.3" remote="github" revision="jellybean" />
-  <project path="vendor/htc/primoc" name="rukin5197/android_vendor_htc_primoc" remote="github" revision="cm-10.1" />
-
+  <project path="vendor/htc/primoc" name="Primo-Dev/android_vendor_htc_primoc" remote="github" revision="cm-10.1" />
+  
+   
 </manifest>
